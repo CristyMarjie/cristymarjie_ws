@@ -7,28 +7,55 @@
     <title>Document</title>
   </head>
   <body style="margin: 50px;">
-    
-    <h1 style="text-align: center;">NEWSPAPER</h1>
-    <p style="text-align: center"><small>Tuesday December 13, 2022</small></p>
-    <table bgcolor="#2449b1" width="100%">
-        <thead>
+    <style>
+        h1 {
+            font-size: 3.5em; 
+            text-align: center;
+            padding-top: 25px;
+        }
+        h2 {
+            font-size: 1.875em; 
+            text-align: center;
+        }
+        page {
+            background: white;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 0.5cm;
+            box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+        }
+    </style>
+    <page size="A4">
+        <h1>NEWSPAPER</h1>
+        <p style="text-align: center">Tuesday December 13, 2022</p>
+        <table bgcolor="#2449b1" width="100%">
+            <thead>
+                <tr>
+                    <th width="80%"></th>
+                    <th width="20%"></th>
+                </tr>
+            </thead>
+        <tbody>
             <tr>
-                <th width="80%"></th>
-                <th width="20%"></th>
+            <td>
+                <h2 style="color: white;">Lorem ipsum dolor</h3>
+                <h5 style="text-align: center;color: yellow;">Sit amet, consectetur adipiscing elit sed do</h5>
+            </td>
+            <td style="text-align: center;color: white;">
+                <small>Lorem Ipsum as their default model text, and a search for </small> 
+            </td>
             </tr>
-        </thead>
-      <tbody>
-        <tr>
-          <td>
-            <h2 style="text-align: center;color: white;">Lorem ipsum dolor</h3>
-            <h6 style="text-align: center;color: yellow;">Sit amet, consectetur adipiscing elit sed do</h6>
-          </td>
-          <td style="text-align: center;color: white;">
-            <small>Lorem Ipsum as their default model text, and a search for </small> 
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <h2 style="text-align: center;">Ut enim ad minim veniam</h2>
+        </tbody>
+        </table>
+        <h2 style="text-align: center;">Ut enim ad minim veniam</h2>
+        <ul>
+            <li>
+                The point of using Lorem Ipsum is that it has a more-or-less normal 
+                distribution of letters, as opposed to using 'Content here, content here',
+                making it look like readable English. Nunc viverra imperdiet enim. Fusce est.
+            </li>
+        </ul>
+    </page>
+    
   </body>
 </html>
