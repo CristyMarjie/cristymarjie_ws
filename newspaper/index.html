@@ -1,34 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-  </head>
-  <body style="margin: 50px;">
+</head>
+<body>
     <style>
-        h1 {
-            font-size: 3.5em; 
-            text-align: center;
-            padding-top: 25px;
-        }
-        h2 {
-            font-size: 1.875em; 
-            text-align: center;
-        }
-        page {
+        .container {
             background: white;
             display: block;
             margin: 0 auto;
             margin-bottom: 0.5cm;
             box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+            width: 100%;
+        }
+        h2.first {
+            font-size: 4em; 
+            text-align: center;
+            color: white;
+        }
+        h2.second {
+            font-size: 2.875em; 
+            text-align: center;
+        }
+        table.first{
+            background-color: #017ac1;
+            width: '100%';
+        }
+        td.foot{
+            vertical-align: text-top;
+            padding-right: 5px;
+            padding-left: 5px; 
+            border-left: 1px solid gray;
+            height: 100%;
         }
     </style>
-    <page size="A4">
-        <h1>NEWSPAPER</h1>
-        <p style="text-align: center">Tuesday December 13, 2022</p>
-        <table bgcolor="#2449b1" width="100%">
+    <div class="container">
+        <!-- <h1></h1>
+        <p style="text-align: center">Tuesday December 13, 2022</p> -->
+        <table width="100%" style="text-align: center;padding-top: 25px;padding-bottom: 10px;">
+            <tbody>
+                <tr>
+                    <td style="font-size: 7em; "><b>NEWSPAPER</b></td>
+                </tr>
+                <tr>
+                    <td>Tuesday December 13, 2022</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="first">
             <thead>
                 <tr>
                     <th width="80%"></th>
@@ -38,8 +60,8 @@
         <tbody>
             <tr>
             <td>
-                <h2 style="color: white;">Lorem ipsum dolor</h3>
-                <h5 style="text-align: center;color: yellow;">Sit amet, consectetur adipiscing elit sed do</h5>
+                <h2 class="first">Lorem ipsum dolor</h3>
+                <h3 style="text-align: center;color: yellow;">Sit amet, consectetur adipiscing elit sed do</h3>
             </td>
             <td style="text-align: center;color: white;">
                 <small>Lorem Ipsum as their default model text, and a search for </small> 
@@ -47,15 +69,62 @@
             </tr>
         </tbody>
         </table>
-        <h2 style="text-align: center;">Ut enim ad minim veniam</h2>
+        <h2 class="second">Ut enim ad minim veniam</h2>
         <ul>
-            <li>
-                The point of using Lorem Ipsum is that it has a more-or-less normal 
-                distribution of letters, as opposed to using 'Content here, content here',
-                making it look like readable English. Nunc viverra imperdiet enim. Fusce est.
+            <li><b>The point of using Lorem Ipsum is that it has a more-or-less normal 
+                distribution of letters, as opposed to as opposed to.</b>
             </li>
         </ul>
-    </page>
-    
-  </body>
+        <table style="padding: 15px;">
+            <tbody>
+                <tr>
+                    <td width="20%" style="padding-right: 15px;">
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. 
+                    </td>
+                    <td width="20%" style="padding-right: 15px;">
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. 
+                    </td>
+                    <td width="20%" style="padding-right: 15px;">
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. 
+                    </td>
+                    <td width="20%" style="padding-right: 15px;">
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. 
+                    </td>
+                    <td width="20%" style="padding-right: 15px;">
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. 
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <table style="padding: 15px;">
+            <tbody>
+                <tr>
+                    <td style="font-size: 2.2em; text-align: justify;" colspan="2"><b>Excepteur sint occa<br>ecat cupidatat non</b></td>
+                    <td rowspan="2" style="background-color: gray;outline: 7px solid rgb(192, 191, 191);"><p style="align-items: flex-end;"></p></td>
+                </tr>
+                <tr>
+                    <td width="20%" style="padding-right: 15px;">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</td>
+                    <td width="20%" style="padding-right: 15px;">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <p style="padding-left: 15px;font-size: 1em; "><b>IN THE NEWS</b></p>
+        <hr>
+        <table style="padding: 15px;background-color: #E6CD96;">
+            <tbody>
+                <tr>
+                    <td style="vertical-align: text-top;padding-right: 5px;"><b>It has survived</b><br> five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset.</td>
+                    <td class="foot"><b>Not only five</b><br> Not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum </td>
+                    <td class="foot"><b>Survived not only</b><br> Survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing </td>
+                    <td class="foot"><b>Has survived</b><br> Has survived not only five, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum </td>
+                    <td class="foot"><b>Many desktop</b><br> Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various </td>
+                    <td class="foot"><b>Now use Lorem</b><br> Now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by </td>
+                </tr>
+            </tbody>
+        </table>
+        
+    </div>
+</body>
 </html>
