@@ -9,15 +9,16 @@
 <body>
     
     <style>
-        table{
+        table.info{
             border: 1px solid black;
             border-collapse: collapse;
-            max-width: 580px;
+            max-width: 600px;
             margin: auto;
+            font-size: 0.9em;
         }
         th, td{
             border-collapse: collapse;
-            border-top: 1px solid black;
+            border-bottom: 1px solid black;
             font-family: Arial;
             padding: 5px;
         }
@@ -25,16 +26,19 @@
             background-color: black;
             color: white;
         }
+        td.smfonts{
+            font-size: 0.8em;
+        }
     </style>
     <h1 style="text-align: center; font-family: 'Franklin Gothic Medium';">BIO-DATA</h1>
-    <table width="100%">
+    <table width="100%" class="info">
         <thead>
             
         </thead>
         <tbody>
             <tr>
                 <td width="80%" colspan="4" class="heads">PERSONAL DATA</td>
-                <td width="20%" rowspan="5" style="border: 1px solid black;"></td>
+                <td width="20%" rowspan="5" style="border: 1px solid black;text-align: center;">PHOTO</td>
             </tr>
             <tr>
                 <td colspan="2">Position Desired :</td>
@@ -112,7 +116,7 @@
         </tbody>
     </table>
     <br/>
-    <table width="100%">
+    <table width="100%" class="info">
         <tbody>
             <tr>
                 <td width="100%" colspan="2" class="heads">EDUCATIONAL BACKGROUND</td>
@@ -155,7 +159,7 @@
         </tbody>
     </table>
     <br>
-    <table width="100%">
+    <table width="100%" class="info">
         <tbody>
             <tr>
                 <td width="100%" colspan="2" class="heads">EMPLOYMENT RECORD</td>
@@ -184,7 +188,7 @@
         </tbody>
     </table>
     <br>
-    <table width="100%">
+    <table width="100%" class="info">
         <tbody>
             <tr>
                 <td class="heads">CHARACTER REFERENCES</td>
@@ -206,29 +210,35 @@
         </tbody>
     </table>
     <br>
-    <table width="100%">
+    <table width="100%" style="max-width: 580px;margin: auto;">
         <tbody>
             <tr>
-                <td width="80%" colspan="4">Res. Cert. No. A:</td>
-                <td width="20%" rowspan="7" align="center">Right Thumb Mark</td>
+                <td width="50%" colspan="4" class="smfonts">Res. Cert. No. A:</td>
+                <td width="25%"></td>
+                <td width="25%" rowspan="6"></td>
             </tr>
             <tr>
-                <td>Issued At:</td>
+                <td colspan="4" class="smfonts">Issued At:</td>
+                <td rowspan="5" style="text-align: center;border: 1px solid black;background-color: white;outline: 7px solid rgb(249, 244, 244);">
+                    Right Thumb Mark
+                </td>
             </tr>
             <tr>
-                <td colspan="2">Issued On:</td>
+                <td colspan="2" class="smfonts">Issued On:</td>
             </tr>
             <tr>
-                <td colspan="4">SSS:</td>
+                <td colspan="4" class="smfonts">SSS:</td>
             </tr>
             <tr>
-                <td colspan="4">TIN:</td>
+                <td colspan="4" class="smfonts">TIN:</td>
             </tr>
             <tr>
-                <td colspan="2">NBI No:</td>
+                <td colspan="2" class="smfonts">NBI No:</td>
             </tr>
             <tr>
-                <td colspan="2">Passport No:</td>
+                <td colspan="4" class="smfonts">Passport No:</td>
+                <td style="border-bottom: 1px solid white;">&nbsp;</td>
+                <td class="smfonts" style="border-bottom: 1px solid white;">Applicant's Signature</td>
             </tr>
         </td> 
         </tbody>
