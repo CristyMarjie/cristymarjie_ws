@@ -9,22 +9,32 @@
 <body>
     
     <style>
-        table, th, td{
-            border-collapse: collapse;
+        table{
             border: 1px solid black;
+            border-collapse: collapse;
+            max-width: 580px;
+            margin: auto;
+        }
+        th, td{
+            border-collapse: collapse;
+            border-top: 1px solid black;
             font-family: Arial;
             padding: 5px;
         }
+        td.heads{
+            background-color: black;
+            color: white;
+        }
     </style>
     <h1 style="text-align: center; font-family: 'Franklin Gothic Medium';">BIO-DATA</h1>
-    <table width="900px">
+    <table width="100%">
         <thead>
             
         </thead>
         <tbody>
             <tr>
-                <td width="80%" colspan="4">PERSONAL DATA</td>
-                <td width="20%" rowspan="5"></td>
+                <td width="80%" colspan="4" class="heads">PERSONAL DATA</td>
+                <td width="20%" rowspan="5" style="border: 1px solid black;"></td>
             </tr>
             <tr>
                 <td colspan="2">Position Desired :</td>
@@ -102,10 +112,10 @@
         </tbody>
     </table>
     <br/>
-    <table width="900px">
+    <table width="100%">
         <tbody>
             <tr>
-                <td width="100%" colspan="2">EDUCATIONAL BACKGROUND</td>
+                <td width="100%" colspan="2" class="heads">EDUCATIONAL BACKGROUND</td>
             </tr>
             <tr>
                 <td></td>
@@ -145,10 +155,10 @@
         </tbody>
     </table>
     <br>
-    <table width="900px">
+    <table width="100%">
         <tbody>
             <tr>
-                <td width="100%" colspan="2">EMPLOYMENT RECORD</td>
+                <td width="100%" colspan="2" class="heads">EMPLOYMENT RECORD</td>
             </tr>
             <tr>
                 <td>From</td> 
@@ -174,10 +184,10 @@
         </tbody>
     </table>
     <br>
-    <table width="900px">
+    <table width="100%">
         <tbody>
             <tr>
-                <td>CHARACTER REFERENCES</td>
+                <td class="heads">CHARACTER REFERENCES</td>
             </tr>
             <tr>
                 <td>Name</td>
@@ -196,7 +206,7 @@
         </tbody>
     </table>
     <br>
-    <table width="900px">
+    <table width="100%">
         <tbody>
             <tr>
                 <td width="80%" colspan="4">Res. Cert. No. A:</td>
@@ -223,9 +233,6 @@
         </td> 
         </tbody>
     </table>
-    <br> <br> <br>
-        <u>____________________________</u><br>
-        <tr >Applicants Signature</tr>   
-        <br>
+    
 </body>
 </html>
