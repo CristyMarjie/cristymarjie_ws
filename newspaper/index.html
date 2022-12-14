@@ -16,15 +16,6 @@
             box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
             width: 100%;
         }
-        h2.first {
-            font-size: 4em; 
-            text-align: center;
-            color: white;
-        }
-        h2.second {
-            font-size: 2.875em; 
-            text-align: center;
-        }
         table.first{
             background-color: #017ac1;
             width: '100%';
@@ -36,10 +27,28 @@
             border-left: 1px solid gray;
             height: 100%;
         }
+        td.white{
+            font-size: 4em; 
+            text-align: center;
+            color: white;
+        }
+        td.yellow{
+            text-align: center;
+            color: yellow;
+            font-size: 2em; 
+            padding-bottom: 5px;
+        }
+        td.smwhite{
+            color: white;
+            text-align: center;
+            padding-right: 15px;
+        }
+        td.ut{
+            font-size: 4em; 
+            text-align: center;
+        }
     </style>
     <div class="container">
-        <!-- <h1></h1>
-        <p style="text-align: center">Tuesday December 13, 2022</p> -->
         <table width="100%" style="text-align: center;padding-top: 25px;padding-bottom: 10px;">
             <tbody>
                 <tr>
@@ -53,28 +62,38 @@
         <table class="first">
             <thead>
                 <tr>
-                    <th width="80%"></th>
-                    <th width="20%"></th>
+                    <th width="75%"></th>
+                    <th width="25%"></th>
                 </tr>
             </thead>
         <tbody>
             <tr>
-            <td>
-                <h2 class="first">Lorem ipsum dolor</h3>
-                <h3 style="text-align: center;color: yellow;">Sit amet, consectetur adipiscing elit sed do</h3>
-            </td>
-            <td style="text-align: center;color: white;">
-                <small>Lorem Ipsum as their default model text, and a search for </small> 
-            </td>
+                <td class="white">Lorem ipsum dolor</td>
+                <td rowspan="2" class="smwhite">Lorem Ipsum as their default model default model text, and a search for text, and a search fortext, and a search for text, and a search for text, and a search</td>
+            </tr>
+            <tr>
+                <td class="yellow">Sit amet, consectetur adipiscing elit sed do</td>
             </tr>
         </tbody>
         </table>
-        <h2 class="second">Ut enim ad minim veniam</h2>
-        <ul>
-            <li><b>The point of using Lorem Ipsum is that it has a more-or-less normal 
-                distribution of letters, as opposed to as opposed to.</b>
-            </li>
-        </ul>
+        <table>
+            <tbody>
+                <tr>
+                    <td class="ut">
+                        Ut enim ad minim veniam
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li><b>The point of using Lorem Ipsum is that it has a more-or-less normal 
+                                distribution of letters, as opposed to as opposed to.</b>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
         <table style="padding: 15px;">
             <tbody>
                 <tr>
