@@ -1,0 +1,57 @@
+table.info{
+    border: 1px solid black;
+    border-collapse: collapse;
+    max-width: 644px;
+    margin: auto;
+    font-size: 0.9em;
+}
+th, td{
+    border-collapse: collapse;
+    border-bottom: 1px solid black;
+    font-family: Arial;
+    padding: 5px;
+}
+td.heads{
+    background-color: black;
+    color: white;
+}
+td.smfonts{
+    font-size: 0.8em;
+}
+select{
+    width: 30%;
+    height: 30px;
+}
+input{
+    height: 20px;
+}
+.tfield1{
+    width: 80%;
+}
+.tfield2{
+    width: 55%;
+}
+.tfield3{
+    width: 47%;
+}
+.educ{
+    width: 60%;
+    height: 20px;
+}
+.educ_year{
+    width: 22%;
+    height: 25px;
+}
+.char_ref{
+    width: 95%;
+}
+.white_bttm{
+    border-bottom: 1px solid white;
+}
+h1{
+    text-align: center; 
+    font-family: 'Franklin Gothic Medium';
+}
+.to{
+    height: 20px;
+}

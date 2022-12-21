@@ -5,39 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    
-    <style>
-        table.info{
-            border: 1px solid black;
-            border-collapse: collapse;
-            max-width: 600px;
-            margin: auto;
-            font-size: 0.9em;
-        }
-        th, td{
-            border-collapse: collapse;
-            border-bottom: 1px solid black;
-            font-family: Arial;
-            padding: 5px;
-        }
-        td.heads{
-            background-color: black;
-            color: white;
-        }
-        td.smfonts{
-            font-size: 0.8em;
-        }
-        select{
-            width: 30%;
-            height: 30px;
-        }
-        input{
-            height: 20px;
-        }
-    </style>
-    <h1 style="text-align: center; font-family: 'Franklin Gothic Medium';">BIO-DATA</h1>
+    <h1>BIO-DATA</h1>
     <form action="" method="#">
         <table width="100%" class="info">
             <thead>
@@ -46,7 +17,9 @@
             <tbody>
                 <tr>
                     <td width="80%" colspan="4" class="heads">PERSONAL DATA</td>
-                    <td width="20%" rowspan="5" style="border: 1px solid black;text-align: center;">PHOTO</td>
+                    <td width="20%" rowspan="5" style="border: 1px solid black;text-align: center;">
+                        <input type="file" id="img" name="img" accept="image/*" style="height: 60px;width: 60px;"  />
+                    </td>
                 </tr>
                 <tr>
                     <td colspan="2">Position Desired : 
@@ -72,13 +45,13 @@
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="4">City Address :
-                        <input style="width: 75%;" type="text" name="c-address" id="c-address" />
+                    <td colspan="4"><label for="c_address" class="tfield1">City Address :
+                        <input class="tfield1" type="text" name="c-address" id="c-address" />
                     </td>
                 </tr>
                 <tr>
                     <td colspan="4">Provincial Address :
-                        <input style="width: 65%;" type="text" name="p-address" id="p-address" />
+                        <input style="width: 72%;" type="text" name="p-address" id="p-address" />
                     </td>
                 </tr>
                 <tr>
@@ -86,7 +59,7 @@
                         <input type="date" name="b-date" id="b-date" />
                     </td>
                     <td colspan="3">Place :
-                        <input style="width: 80%;" type="text" name="p-address" id="p-address" />
+                        <input class="tfield1" type="text" name="p-address" id="p-address" />
                     </td>
                 </tr>
                 <tr>
@@ -147,9 +120,7 @@
                 </tr>
                 <tr>
                     <td colspan="5" >Address :
-                        <input type="checkbox" id="same-add" name="same-add" value="#" />
-                        <label for="same-add"> same as above </label>
-                        <input type="text" name="s-address" id="s-address" />
+                        <input class="tfield1" type="text" name="s-address" id="s-address" />
                     </td>
 
                 </tr>
@@ -157,33 +128,48 @@
                     <td colspan="5">Number of Children, their names and date of birth :</td>
                 </tr>
                 <tr>
-                    <td colspan="5"> &nbsp; </td>
+                    <td colspan="5">
+                        <textarea name="children" id="" cols="77" rows="10"></textarea>
+                    </td>
                 </tr>
-                <tr>
+                <!-- <tr>
                     <td colspan="5">  &nbsp; </td>
+                </tr> -->
+                <tr>
+                    <td colspan="2">Father's Name :
+                        <input class="tfield2" type="text" name="father" id="father" />
+                    </td>
+                    <td colspan="3">Occupation :
+                        <input class="tfield2" type="text" name="occu1" id="occu1" />
+                    </td>
                 </tr>
                 <tr>
-                    <td colspan="2">Father's Name :</td>
-                    <td colspan="3">Occupation :</td>
+                    <td colspan="2">Mother's Name :
+                        <input class="tfield2" type="text" name="mother" id="mother" />
+                    </td>
+                    <td colspan="3">Occupation :
+                        <input class="tfield2" type="text" name="occu2" id="occu2" />
+                    </td>
                 </tr>
                 <tr>
-                    <td colspan="2">Mother's Name :</td>
-                    <td colspan="3">Occupation :</td>
+                    <td colspan="5">Their Address :
+                        <input class="tfield1" type="text" name="s-address" id="s-address" />
+                    </td>
                 </tr>
                 <tr>
-                    <td colspan="5">Their Address :</td>
+                    <td colspan="5">Languages or Dialects you can speak or write :
+                        <input class="tfield3" type="text" name="language" id="language" />
+                    </td>
                 </tr>
                 <tr>
-                    <td colspan="5">Languages or Dialects you can speak or write :</td>
+                    <td colspan="5">Person to be contacted in case of emergency :
+                        <input class="tfield3" type="text" name="emergency" id="emergency" />
+                    </td>
                 </tr>
                 <tr>
-                    <td colspan="5">Person to be contacted in case of emergency :</td>
-                </tr>
-                <tr>
-                    <td colspan="5">Person to be contacted in case of emergency :</td>
-                </tr>
-                <tr>
-                    <td colspan="5">His/Her Address and Telephone :</td>
+                    <td colspan="5">His/Her Address and Telephone :
+                        <input style="width: 62%;" type="text" name="emergency" id="emergency" />
+                    </td>
                 </tr>
             </tbody>
         </table>
@@ -194,39 +180,234 @@
                     <td width="100%" colspan="2" class="heads">EDUCATIONAL BACKGROUND</td>
                 </tr>
                 <tr>
-                    <td></td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
                     <td>Name & Address of School</td>
                     <td> Year Graduated</td>
                 </tr>
                 <tr>
-                    <td >Elementary :</td>
-                    <td></td>
-                    <td></td>
+                    <td colspan="3">Elementary :&nbsp;&nbsp;
+                        <input class="educ" type="text" name="elem" id="elem" />
+                        <select class="educ_year" name="elemyear" id="elemyear">
+                            <option value="1990">1990</option>
+                            <option value="1992">1992</option>
+                            <option value="1993">1993</option>
+                            <option value="1994">1994</option>
+                            <option value="1995">1995</option>
+                            <option value="1996">1996</option>
+                            <option value="1997">1997</option>
+                            <option value="">1998</option>
+                            <option value="">1999</option>
+                            <option value="">2000</option>
+                            <option value="">2001</option>
+                            <option value="">2002</option>
+                            <option value="">2003</option>
+                            <option value="">2004</option>
+                            <option value="">2005</option>
+                            <option value="">2006</option>
+                            <option value="">2007</option>
+                            <option value="">2008</option>
+                            <option value="">2009</option>
+                            <option value="">2010</option>
+                        </select>
+                    </td>
                 </tr>
                 <tr>
-                    <td>Highschool :</td>
-                    <td></td>
-                    <td></td>
+                    <td colspan="3">Highschool :&nbsp;&nbsp;
+                        <input class="educ" type="text" name="high" id="high" />
+                        <select class="educ_year" name="highyear" id="highyear">
+                            <option value="1990">1990</option>
+                            <option value="1992">1992</option>
+                            <option value="1993">1993</option>
+                            <option value="1994">1994</option>
+                            <option value="1995">1995</option>
+                            <option value="1996">1996</option>
+                            <option value="1997">1997</option>
+                            <option value="">1998</option>
+                            <option value="">1999</option>
+                            <option value="">2000</option>
+                            <option value="">2001</option>
+                            <option value="">2002</option>
+                            <option value="">2003</option>
+                            <option value="">2004</option>
+                            <option value="">2005</option>
+                            <option value="">2006</option>
+                            <option value="">2007</option>
+                            <option value="">2008</option>
+                            <option value="">2009</option>
+                            <option value="">2010</option>
+                        </select>
+                    </td>
                 </tr>
                 <tr>
-                    <td>Vocational</td>
-                    <td></td>
-                    <td></td>
+                    <td colspan="3">Vocational :&nbsp;&nbsp;&nbsp;
+                        <input class="educ" type="text" name="voca" id="voca" />
+                        <select class="educ_year" name="vocayear" id="vocayear">
+                            <option value="1990">1990</option>
+                            <option value="1992">1992</option>
+                            <option value="1993">1993</option>
+                            <option value="1994">1994</option>
+                            <option value="1995">1995</option>
+                            <option value="1996">1996</option>
+                            <option value="1997">1997</option>
+                            <option value="">1998</option>
+                            <option value="">1999</option>
+                            <option value="">2000</option>
+                            <option value="">2001</option>
+                            <option value="">2002</option>
+                            <option value="">2003</option>
+                            <option value="">2004</option>
+                            <option value="">2005</option>
+                            <option value="">2006</option>
+                            <option value="">2007</option>
+                            <option value="">2008</option>
+                            <option value="">2009</option>
+                            <option value="">2010</option>
+                        </select>
+                    </td>
                 </tr>
                 <tr>
-                    <td>College</td>
-                    <td></td>
-                    <td></td>
+                    <td colspan="3">College :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input class="educ" type="text" name="college" id="college" />
+                        <select class="educ_year" name="colyear" id="colyear">
+                            <option value="1990">1990</option>
+                            <option value="1992">1992</option>
+                            <option value="1993">1993</option>
+                            <option value="1994">1994</option>
+                            <option value="1995">1995</option>
+                            <option value="1996">1996</option>
+                            <option value="1997">1997</option>
+                            <option value="">1998</option>
+                            <option value="">1999</option>
+                            <option value="">2000</option>
+                            <option value="">2001</option>
+                            <option value="">2002</option>
+                            <option value="">2003</option>
+                            <option value="">2004</option>
+                            <option value="">2005</option>
+                            <option value="">2006</option>
+                            <option value="">2007</option>
+                            <option value="">2008</option>
+                            <option value="">2009</option>
+                            <option value="">2010</option>
+                        </select>
+                    </td>
                 </tr>
                 <tr>
-                    <td>Course</td>
-                    <td></td>
-                    <td></td>
+                    <td colspan="3">Course : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input class="educ" type="text" name="course" id="course" />
+                        <select class="educ_year" name="crseyear" id="crseyear">
+                            <option value="1990">1990</option>
+                            <option value="1992">1992</option>
+                            <option value="1993">1993</option>
+                            <option value="1994">1994</option>
+                            <option value="1995">1995</option>
+                            <option value="1996">1996</option>
+                            <option value="1997">1997</option>
+                            <option value="">1998</option>
+                            <option value="">1999</option>
+                            <option value="">2000</option>
+                            <option value="">2001</option>
+                            <option value="">2002</option>
+                            <option value="">2003</option>
+                            <option value="">2004</option>
+                            <option value="">2005</option>
+                            <option value="">2006</option>
+                            <option value="">2007</option>
+                            <option value="">2008</option>
+                            <option value="">2009</option>
+                            <option value="">2010</option>
+                        </select>
+                    </td>
                 </tr>
                 <tr>
-                    <td>Special Skills</td>
-                    <td></td>
-                    <td></td>
+                    <td colspan="3">Special Skills :
+                        <input style="width: 82%;height: 20px;" type="text" name="skill" id="skill" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <table style="border: 1px solid black;border-collapse: collapse;max-width: 580px;margin: auto;" >
+            <tbody>
+                <tr>
+                    <td colspan="4" class="heads">EMPLOYMENT RECORD</td>
+                  
+                </tr>
+                <tr>
+                    <td width="25%">From</td> 
+                    <td width="25%">To</td>
+                    <td width="25%">Position</td>
+                    <td width="25%">Company</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="to" type="date" name="employment1" id="employment1" />
+                    </td>
+                    <td>
+                        <input class="to" type="date" name="to-employment1" id="to-employment1" />
+                    </td>
+                    <td>
+                        <input type="text" name="pos1" id="pos1" />
+                    </td>
+                    <td>
+                        <input type="text" name="comp1" id="comp1" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="to" type="date" name="employment1" id="employment1" />
+                    </td>
+                    <td>
+                        <input class="to" type="date" name="to-employment1" id="to-employment1" />
+                    </td>
+                    <td>
+                        <input type="text" name="pos1" id="pos1" />
+                    </td>
+                    <td>
+                        <input type="text" name="comp1" id="comp1" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="to" type="date" name="employment1" id="employment1" />
+                    </td>
+                    <td>
+                        <input class="to" type="date" name="to-employment1" id="to-employment1" />
+                    </td>
+                    <td>
+                        <input type="text" name="pos1" id="pos1" />
+                    </td>
+                    <td>
+                        <input type="text" name="comp1" id="comp1" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="to" type="date" name="employment1" id="employment1" />
+                    </td>
+                    <td>
+                        <input class="to" type="date" name="to-employment1" id="to-employment1" />
+                    </td>
+                    <td>
+                        <input type="text" name="pos1" id="pos1" />
+                    </td>
+                    <td>
+                        <input type="text" name="comp1" id="comp1" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="to" type="date" name="employment1" id="employment1" />
+                    </td>
+                    <td>
+                        <input class="to" type="date" name="to-employment1" id="to-employment1" />
+                    </td>
+                    <td>
+                        <input type="text" name="pos1" id="pos1" />
+                    </td>
+                    <td>
+                        <input type="text" name="comp1" id="comp1" />
+                    </td>
                 </tr>
             </tbody>
         </table>
@@ -234,55 +415,50 @@
         <table width="100%" class="info">
             <tbody>
                 <tr>
-                    <td width="100%" colspan="2" class="heads">EMPLOYMENT RECORD</td>
+                    <td colspan="2" class="heads">CHARACTER REFERENCES</td>
                 </tr>
                 <tr>
-                    <td>From</td> 
-                    <td>To</td>
-                    <td>Position</td>
-                    <td>Company</td>
+                    <td width="30%">Name</td>
+                    <td width="30%">Occupation</td>
+                    <td width="40%">Address</td>
                 </tr>
                 <tr>
-                    <td colspan="4">&nbsp;</td>
+                    <td>
+                        <input type="text" />
+                    </td>
+                    <td>
+                        <input type="text" />
+                    </td>
+                    <td>
+                        <input class="char_ref" type="text" />
+                    </td>
                 </tr>
                 <tr>
-                    <td colspan="4">&nbsp;</td>
+                    <td>
+                        <input type="text" />
+                    </td>
+                    <td>
+                        <input type="text" />
+                    </td>
+                    <td>
+                        <input class="char_ref" type="text" />
+                    </td>
                 </tr>
                 <tr>
-                    <td colspan="4">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td colspan="4">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td colspan="4">&nbsp;</td>
+                    <td>
+                        <input type="text" />
+                    </td>
+                    <td>
+                        <input type="text" />
+                    </td>
+                    <td>
+                        <input class="char_ref" type="text" />
+                    </td>
                 </tr>
             </tbody>
         </table>
         <br>
-        <table width="100%" class="info">
-            <tbody>
-                <tr>
-                    <td class="heads">CHARACTER REFERENCES</td>
-                </tr>
-                <tr>
-                    <td>Name</td>
-                    <td>Occupation</td>
-                    <td>Address</td>
-                </tr>
-                <tr>
-                    <td colspan="4">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td colspan="4">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td colspan="4">&nbsp;</td>
-                </tr>
-            </tbody>
-        </table>
-        <br>
-        <table width="100%" style="max-width: 580px;margin: auto;">
+        <table width="100%" style="max-width: 644px;margin: auto;">
             <tbody>
                 <tr>
                     <td width="50%" colspan="4" class="smfonts">Res. Cert. No. A:</td>
@@ -309,13 +485,12 @@
                 </tr>
                 <tr>
                     <td colspan="4" class="smfonts">Passport No:</td>
-                    <td style="border-bottom: 1px solid white;">&nbsp;</td>
-                    <td class="smfonts" style="border-bottom: 1px solid white;">Applicant's Signature</td>
+                    <td class="white_bttm">&nbsp;</td>
+                    <td class="smfonts white_bttm">Applicant's Signature</td>
                 </tr>
             </td> 
             </tbody>
         </table>
     </form>
-    
 </body>
 </html>
