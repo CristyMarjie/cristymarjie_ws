@@ -19,7 +19,7 @@
     width: 75%;
     padding: 0 20px;
     background-color: rgba(255, 255, 255, 0.1);
-    border: 2px solid rgba(255, 255, 255, 0.7);
+    /* border: 2px solid rgba(255, 255, 255, 0.7); */
     border-radius: 20px;
     display: flex;
     backdrop-filter: blur(25px);
@@ -85,7 +85,7 @@ nav .logo{
 }
 .contains .section-1 h3{
     font-size: 24px;
-    color: #6f34fe;
+    color: #d94e49;
     margin-bottom: 10px;
 }
 .contains .section-1 p{
@@ -95,8 +95,8 @@ nav .logo{
 }
 .contains .section-1 .btn{
     padding: 15px 20px;
-    background-color: #6f34fe;
-    border: 1px solid #6f34fe;
+    background-color: #d94e49;
+    border: 1px solid #d94e49;
     color: #fff;
     border-radius: 5px;
     font-weight: 500;
@@ -105,7 +105,7 @@ nav .logo{
 }
 .contains .section-1 .btn:hover{
     background-color: #fff;
-    color: #6f34fe;
+    color: #d94e49;
 }
 .contains .section-2{
     width: 40%;
@@ -124,10 +124,10 @@ nav .logo{
 }
 .contains .section-3 a i{
     font-size: 25px;
-    color: #7c8bd1;
+    color: #F48884;
     transition: 0.3s;
 }
 .contains .section-3 a i:hover{
-    color: #6f34fe;
+    color: #d94e49;
 }
 
