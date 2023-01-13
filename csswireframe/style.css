@@ -181,7 +181,7 @@ header.shadow {
 
 .about-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 2fr;
     gap: 1rem;
     margin-top: 2rem;
 }
@@ -280,7 +280,7 @@ span {
     width: 80%;
 }
 
-.services-content {
+.portfolio-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     justify-content: center;
@@ -288,9 +288,10 @@ span {
     margin-top: 2rem;
 }
 
-.services-box {
+.portfolio-box {
     padding: 20px;
     width: 260px;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -300,37 +301,48 @@ span {
     box-shadow: 0 2px 7px rgb(14 55 54 / 15%);
 }
 
-.services-box:hover {
+.images{
+    width: 260px;
+    height: 40vh;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 7px rgb(14 55 54 / 15%);
+}
+
+.images:hover {
+    opacity: 0.5;
+}
+
+.portfolio-box:hover {
     background-color: #a33749;
 }
 
-.services-box h3 {
+.portfolio-box h3 {
     font-size: 1rem;
     font-weight: 600;
     margin: 0.7rem 0 0.4rem;
 }
 
-.services-box:hover h3 {
+.portfolio-box:hover h3 {
     color: #fff;
 }
 
-.services-box .bx {
+.portfolio-box .bx {
     padding-top: 2rem;
     font-size: 54px;
     color: var(--main-color);
 }
 
-.services-box:hover .bx {
+.portfolio-box:hover .bx {
     color: #fd91b5;
 }
 
-.services-box a {
+.portfolio-box a {
     color: var(--main-color);
     font-size: var(--p-font);
     font-weight: 500;
 }
 
-.services-box:hover a {
+.portfolio-box:hover a {
     color: #8b8a8f;
 }
 
