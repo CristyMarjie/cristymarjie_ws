@@ -1,0 +1,23 @@
+.bg-yellow{
+    background-color: #FFEA00;
+}
+.text-yellow{
+    color: #FFEA00;
+}
+.font-jockey{
+    font-family: 'Jockey One', sans-serif;
+}
+.img-size{
+    width: 15vw;
+    height: 30vh;
+}
+
+.img-sm-size{
+    width: 15vw;
+    height: 15vh;
+}
+
+.img-sm-size:hover{
+    width: 20vw;
+    height: 20vh;
+}
